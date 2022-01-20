@@ -62,7 +62,7 @@ const inputLoop = async (mode) => {
 			inputMode = 'standard';
 			// ask for input
 			rl.question('> ', async (input) => {
-				if (input !== '') {
+				if (input !== '' && fileList[input]) {
 					console.log('\n');
 					let listItem = fileList[input];
 					if (listItem === 'all') {
